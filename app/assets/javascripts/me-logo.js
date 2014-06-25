@@ -1,14 +1,13 @@
 (function() {
   (function($) {
     $.extend(mejs.MepDefaults, {
-      logoEnabled: false,
       logoURL: null,
       logoAction: null
     });
     return $.extend(MediaElementPlayer.prototype, {
-      buildlogoPlugin: function(player, controls, layers, media) {
+      buildlogo: function(player, controls, layers, media) {
         var button;
-        if (!(player.options.logoEnabled && player.options.logoAction && player.options.logoURL)) {
+        if (!(player.options.logoAction && player.options.logoURL)) {
           return;
         }
         button = $("<div class='mejs-button mejs-logo-selector'> <button type='button' aria-controls='mep_0' title='' aria-label=''/> </div>");

@@ -1,15 +1,13 @@
 (($)->
 
   $.extend mejs.MepDefaults,
-    logoEnabled: false
     logoURL: null
     logoAction: null
 
   $.extend MediaElementPlayer::,
 
-    buildlogoPlugin: (player, controls, layers, media) ->
-      return unless player.options.logoEnabled and
-                    player.options.logoAction and
+    buildlogo: (player, controls, layers, media) ->
+      return unless player.options.logoAction and
                     player.options.logoURL
 
 
