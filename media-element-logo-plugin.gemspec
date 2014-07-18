@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'media_element_logo_plugin/version'
+require 'media-element-logo-plugin/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'media_element_logo_plugin'
+  spec.name          = 'media-element-logo-plugin'
   spec.version       = MediaElementLogoPlugin::VERSION
   spec.authors       = ['Adam Hallett']
   spec.email         = ['adam.t.hallett@gmail.com']

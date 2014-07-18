@@ -3,6 +3,7 @@
   $.extend mejs.MepDefaults,
     logoURL: null
     logoAction: null
+    logoTitle: ''
 
   $.extend MediaElementPlayer::,
 
@@ -12,7 +13,7 @@
 
 
       button = $("<div class='mejs-button mejs-logo-selector'>
-                    <button type='button' aria-controls='mep_0' title='' aria-label=''/>
+                    <button type='button' aria-controls='mep_0' title='#{logoTitle}' aria-label='#{logoTitle}'/>
                   </div>")
 
       button.appendTo(controls)

@@ -2,7 +2,8 @@
   (function($) {
     $.extend(mejs.MepDefaults, {
       logoURL: null,
-      logoAction: null
+      logoAction: null,
+      logoTitle: ''
     });
     return $.extend(MediaElementPlayer.prototype, {
       buildlogo: function(player, controls, layers, media) {
@@ -10,7 +11,7 @@
         if (!(player.options.logoAction && player.options.logoURL)) {
           return;
         }
-        button = $("<div class='mejs-button mejs-logo-selector'> <button type='button' aria-controls='mep_0' title='' aria-label=''/> </div>");
+        button = $("<div class='mejs-button mejs-logo-selector'> <button type='button' aria-controls='mep_0' title='" + logoTitle + "' aria-label='" + logoTitle + "'/> </div>");
         button.appendTo(controls);
         return button.click(function(event) {
           var url;
