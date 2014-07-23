@@ -1,6 +1,6 @@
-# Media::Element::Logo::Plugin
+MediaElement Logo Plugin
 
-This gem displays a logo on the scrubber bar.  Some of the code here is deriveid from [MediaElement.js Plugins](https://github.com/hark/mediaelement-plugins).
+This gem displays a logo on the scrubber bar.  Some of the code here is derived from [MediaElement.js Plugins](https://github.com/hark/mediaelement-plugins).
 
 ## Installation
 
@@ -18,8 +18,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+  Add javascript plugin and styling to the page:
 
+  ```
+    <%= javascript_include_tag 'me-logo' %>
+    <%= stylesheet_link_tag 'me-logo' %>
+  ```
+
+  Add these options to MediaElement:
+
+  ```
+  logoAction: 'popup',
+  logoURL: 'http://www.something.com',
+  logoTitle: 'View on Something.com'
+  ```
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/media-element-logo-plugin/fork )
