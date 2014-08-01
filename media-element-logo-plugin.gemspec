@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'guard-coffeescript'
 
-  spec.add_dependency 'rails', '~> 3.2.3'
+  spec.add_dependency 'rails', '>= 3.2.3'
 
 end
